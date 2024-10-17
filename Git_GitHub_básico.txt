@@ -1,0 +1,77 @@
+para la creación desde 0 de un repositorio el siguiente
+
+
+UBICARNOS :
+	pwd 	= > ver en que dirección de fichero nos encontramos
+
+para poder ubicarnos en una carpeta workspace, aki estará almacenado nuestras 
+carpetas para el repositorio.
+
+	ls  	=> ver el contenido del fichero .
+	cd 	=> comando para moverte entre ficheros hacia adelante o entrar
+	cd .	=> comando cd . para  moverte entre ficheros hacia atrar o salir 
+	cd ..	=> sale hasta la primera ubicaion de la carpeta de origen 
+	ls -a 	=>  visualizar archivos ocultos:  se mostrará archivo oculto (/. /. /. /git)
+
+
+CREAR ARCHIVO PARA REPOSITORIO:
+	mkdir 	=> creación de fichero o carpeta
+	pwd  	=> ver ubicaion para comprobar
+	ls 	=> para visualizar lo creado 
+	
+INICIALIZAMOS GIT :
+	git init 	=>inializa un repositorio para la carpeta en donde te encuentres.(/././workspace/TuCarpeta)
+	ls -a 	=>  visualizar archivos ocultos:  se mostrará archivo oculto (. .. .git)
+
+ENTRAR A CARPETA OCULTA:
+	cd .git 	=> se mostrará los archivos para la implementacion del repositorio.
+
+ALL FOR GIT COMMIT
+	code 	=> abrirá Vscode para comenzar a desarrollar y tomará la ubicación en donde te encuentres.
+
+	A) Una vez hallamos creado algun archivo en la carpeta 'TuCarpeta' ->esto es una modificación por 
+	ello se realiza lo siguiente:
+	
+	B) AGREGAR CAMBIOS Y ARCHIVOS CREADOS:
+	git add 	=> comando para agregar archivos, una ves estos sean modificados, agrega git add 'TuCarpetaModificada'.
+	git add . 	=> Este agrega todos los archivos modificados. 
+	git status  => ver el estado de la carpeta ver si hay archivos para commit. Uso de -s para una ,muestra mas ordanada.
+
+	git commit -m "Commit inicial" 		=> Describe los cambios o commit realizado
+.
+	git commit => Al precionar enter el comando abrirá vscode para ver el commit y describir los cambios o commit realizado.
+	
+ELIMINACIÓN DE ARCHIVOS DENTRO DE REPOSITORIO:
+	rm 'TuArchivo' 	=> comando delete de archivos.
+	git status 		=> Visualisizar los cambios realizao , este muestra ( deleted :    TuArchivo)
+	git add 'TuArchivo'	=> Agregar los cambios realizados.
+	git status -s           	=>ver resultados .
+	git commit -m 'Eliminando TuArchivo'	=> indicará que eliminaste el archivo por completo.
+	git status 		=> Visualizar los cambios , resultado: On branch main , no hay nada por commitear , arbol de trabajo limpio.
+	ls 		=> visualizar  ficheros.
+	git restore '' 	=> Restaurar archivo eliminado.
+
+Subir a GITHUB.
+	ir a pagina de github , si no tenés cuenta de github , cree una o continuar con cuentas como Google o Apple.
+	click a new repository , este generará unos codigo para copiar en caso no hallas inicalizado en git bash y tmabien 
+	por si ya inializaste 
+	una vez hallas inicializado en git
+	usar el segundo grupo de comandos para subir tu folio a git hub .
+
+Subir Cambios a Git hub si Ya inicializaste en git bash y ya tienes tu repositorio 
+	Aplicar (UBICARNOS)
+
+	cd 	 		=> movernos a workspace
+	cd TuCarpetaAgrerar  	=>Moverte a tu carpeta a agregar 
+	code 			=> Abre VScode edita y modifica TuCarpetaAgregar , para ello esta ya debío estar  en tu Github
+	git status -s 		=> ver modificaciones que requieren commit
+
+	git add commit      		=> Agrega el commit por vs code ya que hací esta configurado.
+	git add commit -m "Tu commit" => Agrega el commit escrito por bash.        
+	git status  		=> Comprobar que no halla nada por commitear	 
+ 	git push -u origin main  	=> Subir a tu rama main los cambios 
+
+Se mostrará los combios o archivo agregado dentro del repositorio. 
+
+
+	
