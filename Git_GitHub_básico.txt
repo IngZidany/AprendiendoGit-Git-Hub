@@ -10,13 +10,13 @@ carpetas para el repositorio.
 	ls  	=> ver el contenido del fichero .
 	cd 	=> comando para moverte entre ficheros hacia adelante o entrar
 	cd .	=> comando cd . para  moverte entre ficheros hacia atrar o salir 
-	cd ..	=> sale hasta la primera ubicaion de la carpeta de origen 
+	cd ..	=> sale hasta la primera ubicación de la carpeta de origen 
 	ls -a 	=>  visualizar archivos ocultos:  se mostrará archivo oculto (/. /. /. /git)
 
 
 CREAR ARCHIVO PARA REPOSITORIO:
 	mkdir 	=> creación de fichero o carpeta
-	pwd  	=> ver ubicaion para comprobar
+	pwd  	=> ver ubicación para comprobar
 	ls 	=> para visualizar lo creado 
 	
 INICIALIZAMOS GIT :
@@ -35,15 +35,15 @@ ALL FOR GIT COMMIT
 	B) AGREGAR CAMBIOS Y ARCHIVOS CREADOS:
 	git add 	=> comando para agregar archivos, una ves estos sean modificados, agrega git add 'TuCarpetaModificada'.
 	git add . 	=> Este agrega todos los archivos modificados. 
-	git status  => ver el estado de la carpeta ver si hay archivos para commit. Uso de -s para una ,muestra mas ordanada.
+	git status  => ver el estado de la carpeta ver si hay archivos para commit. Uso de -s para una ,muestra mas ordenada.
 
 	git commit -m "Commit inicial" 		=> Describe los cambios o commit realizado
 .
-	git commit => Al precionar enter el comando abrirá vscode para ver el commit y describir los cambios o commit realizado.
+	git commit => Al precionar la tecla 'enter' el comando abrirá vscode para ver el commit y describir los cambios o commit realizado.
 	
 ELIMINACIÓN DE ARCHIVOS DENTRO DE REPOSITORIO:
 	rm 'TuArchivo' 	=> comando delete de archivos.
-	git status 		=> Visualisizar los cambios realizao , este muestra ( deleted :    TuArchivo)
+	git status 		=> Visualisizar los cambios realizados , este muestra ( deleted :    TuArchivo)
 	git add 'TuArchivo'	=> Agregar los cambios realizados.
 	git status -s           	=>ver resultados .
 	git commit -m 'Eliminando TuArchivo'	=> indicará que eliminaste el archivo por completo.
@@ -72,6 +72,4 @@ Subir Cambios a Git hub si Ya inicializaste en git bash y ya tienes tu repositor
  	git push -u origin main  	=> Subir a tu rama main los cambios 
 
 Se mostrará los combios o archivo agregado dentro del repositorio. 
-
-
-	
+................................
