@@ -53,7 +53,7 @@ ELIMINACIÓN DE ARCHIVOS DENTRO DE REPOSITORIO:
 
 Subir a GITHUB.
 	ir a pagina de github , si no tenés cuenta de github , cree una o continuar con cuentas como Google o Apple.
-	click a new repository , este generará unos codigo para copiar en caso no hallas inicalizado en git bash y tmabien 
+	click a new repository , este generará unos codigo para copiar en caso no hallas inicalizado en git bash y tambien 
 	por si ya inializaste 
 	una vez hallas inicializado en git
 	usar el segundo grupo de comandos para subir tu folio a git hub .
