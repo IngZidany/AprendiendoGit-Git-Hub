@@ -1,0 +1,80 @@
+GIT
+-.-------------------.-
+
+Ramas en git 
+
+definición: 	es un hilo de trabajo que nace de la rama main
+		cada rama que se cree es independiente en cambios, de las otras.
+		además otros pueden sacar otro hilo de trabajo de la primera rama 
+		creada.
+		los cambios que se desarrollen en las distintas ramas podrán ser 
+		subidas ala rama principal/main.
+
+Uso:
+
+-------------------------------------
+		GIT	
+-------------------------------------
+ls 		---->mostrar ficheros para luego movernos entre ellos.
+cd workspace 	--->movernos a dicho fichero, para ello debemos tener el fichero.
+ls 		----->mostrar los ficheros de la carpeta en la que nos encontramos
+pwd 	-----> en caso quieras comprobar que te encuentres en dicha ruta de archivo.
+
+
+git branch ---->observaran en que rama nos encontramos y ver las ramas existentes.
+se mostrará lo siguiente una vez dado enter_:-----> * main
+
+
+git branch nombrederama ----> 'nombrederama' refiere al nombre que le pondrás a la rama a crear.
+
+"Si queremos comprobar si 'nombrederama' esta creada ¿Qué comando usamos?"
+rpt: observar los comandos anteriores.
+
+git branch -m nombrederama rama1 ----->de esta manera podemos cambiar el nombre de la rama 'nombrederama' la cual existe a 'rama1' nuevo nombre.
+
+git branch -----> comprobar que este creada.
+
+
+
+
+----------------------------------------------
+
+
+
+para movernos entre rama.
+git checkout rama1 ---->Esto nos moverá de la rama main a "rama1"
+
+En caso quiéranos eliminar la rama creada:
+git branch -D rama1 ---->para ello debes estar en la rama main o master.
+
+para ello muévete a la rama main o master:
+git checkout turamaprincipal.
+
+git branch 	-----> observar las ramas, comprobar que se halla eliminado
+
+clear 		------> para limpiar bash.
+
+
+
+-----------------------------------------
+APLICACIÓN-------------------------------
+-----------------------------------------
+
+git branch 		-----> observar las ramas existentes
+git branch ramaprueba 	-----> crearemos una rama de prueba "ramaprueba" es el nombre de la rama creada, puede variar el nombre.
+
+git checkout ramaprueba		-----> nos movemos a la rama creada.
+touch "nombredearchivo.txt" 	-----> crearemos un archivo .txt que no esté en la principal será único de la rama de prueba
+
+git add .			----> para subir todos los cambios de de la rama.
+git commit -m "tu commit"	---->agregarle un commit a tus cambios.
+
+para comprobar que "nombredearchivo.txt" es único de la versión de la ramaprueba y no está en la rama main o master (ramas principales):
+	git checkout main 	---> nos moverá a la rama principal.
+	ls -s			---> para observar contenido(ficheros,archivos)de 					 estemos ubicados.
+
+	observaremos que el .txt no se encuentra en main pero si en la rama anterior 
+	ramaprueba.
+
+ 
+
