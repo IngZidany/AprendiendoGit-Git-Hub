@@ -1,0 +1,53 @@
+	GIT CLONE
+----------------------------
+
+definición:	git clone es una manera adversa a git push
+		en vez de subir un Project de nuestro repo local
+		al repositorio remoto de git hub.
+
+lo que haremos es:
+
+		proceso adverso: git clone
+		traemos un repositorio que está en git hub (remoto) a 
+		nuestro repositorio local.
+
+git clone "https://gitub.com/TuRepo/EjemploClonar" <--------> esta URL es un ejemplo de que repositorio deseas clonar.
+
+Para clonar una repo debes dirigirte a los repositorios de GITHUB y copiar la URL del Project a clonar.
+
+ls -s ----> para observar que el clon se encuentre en nuestro repo local.
+
+
+GIT PULL:
+
+caso: un día lunes Juan hiso push a su repo a las 7 am, a las 8 am Mateo clona el repo y a las 10 am del mismo día Juan sube unos cambios a su repo, de manera que a Mateo le tocará traer solo ese cambio a su repositorio clonado. no se debe volver a clonar el repo.
+
+	git pull	---> para traer esos cambios que no tenemos 
+
+para ello : 
+	git pull origin main  ------------>Usamos en comando 'git pull' más el apodo que tiene nuestra repo 'origin' y luego la rama que estamos utilizando por ello 'main'
+
+aki reultado:
+
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.01 KiB | 294.00 KiB/s, done.
+From https://github.com/IngZidany/AprendiendoGit-Git-Hub
+ * branch            main       -> FETCH_HEAD
+   09fbbc4..7bb0b30  main       -> origin/main
+Updating 09fbbc4..7bb0b30
+Fast-forward
+ GIT BRANCH | 80 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 80 insertions(+)
+ create mode 100644 GIT BRANCH
+
+Nos indica que GIT BRANCH es un archivo agregado que no teníamos.
+
+
+Ojo -> el repositorio debe ser publico para poder clonarlo.
+
+
+
